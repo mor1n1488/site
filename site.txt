@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мини-сайт заявки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Ремонт квартир</h1>
+    <p>Оставьте заявку, и мы свяжемся с вами</p>
+
+    <form class="form">
+      <input class="name" type="text" placeholder="Ваше имя">
+      <input class="phone" type="tel" placeholder="Ваш телефон">
+      <button type="submit">Отправить заявку</button>
+    </form>
+
+    <p class="message"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.hero {
+  width: 90%;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+p {
+  color: #555;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+.message {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+const form = document.querySelector('.form');
+const nameInput = document.querySelector('.name');
+const phoneInput = document.querySelector('.phone');
+const message = document.querySelector('.message');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const userName = nameInput.value;
+  const userPhone = phoneInput.value;
+
+  if (userName === '' || userPhone === '') {
+    message.textContent = 'Заполните все поля';
+    message.style.color = 'red';
+  } else {
+    message.textContent = 'Здравствуйте, ' + userName + '! Ваша заявка отправлена.';
+    message.style.color = 'green';
+
+    nameInput.value = '';
+    phoneInput.value = '';
+  }
+});

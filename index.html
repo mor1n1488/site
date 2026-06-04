@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaRoute — прогулки по Неве</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">AquaRoute</a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#routes">Маршруты</a>
+        <a href="#fleet">Флот</a>
+        <a href="#prices">Прайс</a>
+        <a href="#booking">Заявка</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__contacts">
+        <span>Санкт-Петербург</span>
+        <a href="tel:+78126605516">+7 (812) 660-55-16</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">Индивидуальные водные прогулки</p>
+        <h1>Прогулки по Неве на катерах и яхтах</h1>
+        <p class="hero__text">
+          Подберите маршрут по историческому центру, разводным мостам или Финскому заливу.
+          Судно предоставляется с капитаном, а менеджер поможет выбрать формат отдыха.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#booking" class="btn btn--primary">Оставить заявку</a>
+          <a href="#routes" class="btn btn--ghost">Смотреть маршруты</a>
+        </div>
+
+        <div class="hero__features">
+          <div>
+            <strong>от 2 часов</strong>
+            <span>минимальная прогулка</span>
+          </div>
+          <div>
+            <strong>до 15 гостей</strong>
+            <span>катера и яхты</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>дневные и ночные маршруты</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div class="container intro__grid">
+        <div>
+          <p class="section-label">О маршруте</p>
+          <h2>Нева, центр Петербурга и виды с воды</h2>
+        </div>
+        <p>
+          Маршрут проходит по акватории Невы: можно увидеть главные набережные,
+          мосты, исторические здания, крепость и современную панораму города.
+          Программа меняется под длительность прогулки, погоду и пожелания гостей.
+        </p>
+      </div>
+    </section>
+
+    <section class="section routes" id="routes">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Выбор направления</p>
+          <h2>Популярные маршруты</h2>
+        </div>
+
+        <div class="route-grid">
+          <article class="route-card route-card--large">
+            <div class="route-card__tag">Хит</div>
+            <h3>Парадная Нева, реки и каналы</h3>
+            <p>
+              Прогулка по Неве с возможным выходом в реки и каналы. Подходит для первого знакомства с городом с воды.
+            </p>
+            <ul>
+              <li>Исторический центр</li>
+              <li>Мосты и набережные</li>
+              <li>Индивидуальный маршрут</li>
+            </ul>
+            <div class="route-card__bottom">
+              <span>от 2 часов</span>
+              <a href="#booking">Оставить заявку</a>
+            </div>
+          </article>
+
+          <article class="route-card">
+            <div class="route-card__tag">Ночь</div>
+            <h3>Нева и разводные мосты</h3>
+            <p>Ночной маршрут для просмотра разводки мостов с воды.</p>
+            <div class="route-card__bottom">
+              <span>2 часа</span>
+              <a href="#booking">Выбрать</a>
+            </div>
+          </article>
+
+          <article class="route-card">
+            <div class="route-card__tag">Залив</div>
+            <h3>Нева и Финский залив</h3>
+            <p>Расширенный маршрут с выходом к современной панораме города.</p>
+            <div class="route-card__bottom">
+              <span>от 3 часов</span>
+              <a href="#booking">Выбрать</a>
+            </div>
+          </article>
+
+          <article class="route-card">
+            <div class="route-card__tag">Закат</div>
+            <h3>Закат на воде</h3>
+            <p>Вечерний формат для свиданий, фотосессий и спокойного отдыха.</p>
+            <div class="route-card__bottom">
+              <span>4 часа</span>
+              <a href="#booking">Выбрать</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fleet" id="fleet">
+      <div class="container">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="section-label">Флот</p>
+            <h2>Катера и яхты для прогулок</h2>
+          </div>
+          <a href="#prices" class="text-link">Смотреть прайс</a>
+        </div>
+
+        <div class="fleet-grid">
+          <article class="boat-card">
+            <div class="boat-card__image boat-card__image--one"></div>
+            <div class="boat-card__body">
+              <h3>Neva Classic</h3>
+              <p>Катер для небольшой компании и короткой прогулки.</p>
+              <div class="boat-card__meta">
+                <span>до 5 гостей</span>
+                <span>от 5 000 ₽/час</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="boat-card">
+            <div class="boat-card__image boat-card__image--two"></div>
+            <div class="boat-card__body">
+              <h3>River Premium</h3>
+              <p>Просторный катер с мягкой зоной отдыха.</p>
+              <div class="boat-card__meta">
+                <span>до 8 гостей</span>
+                <span>от 8 500 ₽/час</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="boat-card">
+            <div class="boat-card__image boat-card__image--three"></div>
+            <div class="boat-card__body">
+              <h3>Sky Yacht</h3>
+              <p>Яхта для праздников, корпоративов и фотосессий.</p>
+              <div class="boat-card__meta">
+                <span>до 15 гостей</span>
+                <span>от 18 000 ₽/час</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section prices" id="prices">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Стоимость</p>
+          <h2>Прайс-лист на катера и яхты</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Судно</th>
+                <th>Тип</th>
+                <th>Вместимость</th>
+                <th>Мин. время</th>
+                <th>Цена за час</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Neva Classic</td>
+                <td>Катер</td>
+                <td>до 5 гостей</td>
+                <td>2 часа</td>
+                <td>5 000 ₽</td>
+              </tr>
+              <tr>
+                <td>River Premium</td>
+                <td>Катер</td>
+                <td>до 8 гостей</td>
+                <td>2 часа</td>
+                <td>8 500 ₽</td>
+              </tr>
+              <tr>
+                <td>Sky Yacht</td>
+                <td>Яхта</td>
+                <td>до 15 гостей</td>
+                <td>3 часа</td>
+                <td>18 000 ₽</td>
+              </tr>
+              <tr>
+                <td>Event Yacht</td>
+                <td>Яхта</td>
+                <td>до 25 гостей</td>
+                <td>3 часа</td>
+                <td>25 000 ₽</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Как забронировать</p>
+          <h2>Бронирование в 3 шага</h2>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span>01</span>
+            <h3>Оставьте заявку</h3>
+            <p>Укажите имя, телефон, дату и желаемое судно.</p>
+          </div>
+          <div class="step-card">
+            <span>02</span>
+            <h3>Подбор судна</h3>
+            <p>Менеджер уточнит маршрут, количество гостей и формат отдыха.</p>
+          </div>
+          <div class="step-card">
+            <span>03</span>
+            <h3>Бронь и прогулка</h3>
+            <p>После подтверждения даты и времени прогулка фиксируется за вами.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="booking">
+      <div class="container booking__grid">
+        <div class="booking__info">
+          <p class="section-label">Быстрая бронь</p>
+          <h2>Оставьте заявку на прогулку</h2>
+          <p>
+            Форма учебная: данные не отправляются на сервер, а проверяются через JavaScript.
+            Это удобно для демонстрации работы формы на экзамене.
+          </p>
+          <div class="contact-card">
+            <span>Работаем ежедневно</span>
+            <strong>09:00 — 23:00</strong>
+          </div>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+          <input class="input" id="nameInput" type="text" placeholder="Ваше имя">
+          <input class="input" id="phoneInput" type="tel" placeholder="Ваш телефон">
+          <select class="input" id="routeInput">
+            <option value="">Выберите маршрут</option>
+            <option value="Парадная Нева">Парадная Нева</option>
+            <option value="Разводные мосты">Разводные мосты</option>
+            <option value="Финский залив">Финский залив</option>
+            <option value="Закат на воде">Закат на воде</option>
+          </select>
+          <input class="input" id="dateInput" type="date">
+          <button class="btn btn--primary" type="submit">Отправить заявку</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Вопросы</p>
+          <h2>Популярные вопросы</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>С капитаном или без?</summary>
+            <p>В учебном макете все прогулки указаны с капитаном.</p>
+          </details>
+          <details>
+            <summary>Можно ли выбрать свой маршрут?</summary>
+            <p>Да, маршрут можно адаптировать под время прогулки и пожелания гостей.</p>
+          </details>
+          <details>
+            <summary>Что включено в стоимость?</summary>
+            <p>В макете стоимость указана за аренду судна за час. Дополнительные услуги можно добавить отдельно.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mega-footer" id="contacts">
+    <div class="mega-footer__backdrop"></div>
+
+    <div class="mega-footer__card">
+      <div class="mega-footer__top">
+        <div class="mega-footer__brand">
+          <a href="#hero" class="mega-logo">AQUA<span>ROUTE</span></a>
+          <button class="city-switch" type="button">🇷🇺 Северная гавань ▾</button>
+        </div>
+
+        <div class="mega-footer__contacts">
+          <a href="tel:+78125552709" class="contact-pill">+7 (812) 555-27-09</a>
+          <a href="mailto:info@aquaroute.ru" class="contact-pill">info@aquaroute.ru</a>
+          <a href="tel:+78125552709" class="social-pill" aria-label="Позвонить">☎</a>
+          <a href="#booking" class="social-pill" aria-label="Оставить заявку">✈</a>
+          <a href="#hero" class="social-pill" aria-label="Наверх">⌂</a>
+        </div>
+      </div>
+
+      <nav class="mega-footer__menu" aria-label="Нижнее меню сайта">
+        <div class="mega-column">
+          <h3>Аренда судна</h3>
+          <a href="#fleet">Прогулка на катере</a>
+          <a href="#fleet">Прогулка на яхте</a>
+          <a href="#prices">Прайс-лист флота</a>
+        </div>
+
+        <div class="mega-column">
+          <h3>Услуги ›</h3>
+          <a href="#booking">Индивидуальная заявка</a>
+          <a href="#routes">Экскурсионный маршрут</a>
+          <a href="#booking">Подарочный сертификат</a>
+        </div>
+
+        <div class="mega-column">
+          <h3>Маршруты ›</h3>
+          <a href="#routes">По Неве</a>
+          <a href="#routes">Разводные мосты</a>
+          <a href="#routes">Выход в залив</a>
+        </div>
+
+        <div class="mega-column">
+          <h3>Круизы ›</h3>
+          <a href="#routes">Островной маршрут</a>
+          <a href="#routes">Закатная прогулка</a>
+          <a href="#routes">Северная бухта</a>
+          <a href="#routes">Маячный рейс</a>
+        </div>
+
+        <div class="mega-column">
+          <h3>Мероприятия ›</h3>
+          <a href="#booking">День рождения на яхте</a>
+          <a href="#booking">Свадьба на воде</a>
+          <a href="#booking">Вечеринка на катере</a>
+          <a href="#booking">Корпоративная прогулка</a>
+        </div>
+
+        <div class="mega-column">
+          <h3>Информация</h3>
+          <a href="#contacts">Контакты</a>
+          <a href="#faq">Вопросы и ответы</a>
+          <a href="#prices">Условия бронирования</a>
+          <a href="#hero">Наверх страницы</a>
+        </div>
+      </nav>
+
+      <div class="mega-footer__line"></div>
+
+      <div class="mega-footer__bottom">
+        <p>© 2026 AQUAROUTE</p>
+
+        <div class="mega-footer__links">
+          <a href="#">Оферта</a>
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Согласие на обработку персональных данных</a>
+        </div>
+
+        <p class="mega-footer__note">
+          Учебный макет. Контакты, город и реквизиты являются вымышленными.
+        </p>
+      </div>
+    </div>
+
+    <a href="tel:+78125552709" class="floating-call" aria-label="Позвонить">☎</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
